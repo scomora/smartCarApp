@@ -1,0 +1,24 @@
+<% include header %>
+<title>Home</title>
+
+<h3>Please select an option to continue</h3>
+<form action="/lockCar">
+    <input type="submit" value="Lock">
+</form>
+<form action="/unlockCar">
+    <input type="submit" value="Unlock">
+</form>
+<form action="/findDistance" method="POST">
+    <!-- dropdown -->
+    <select name="cities">
+        <option value="berlin" selected>Berlin</option>
+        <option value="shanghai">Shanghai</option>
+        <option value="sanfrancisco">San Francisco</option>
+        <option value="miami">Miami</option>
+        <option value="telaviv">Tel Aviv</option>
+    </select>
+    <input type="submit" value="Show location on map">
+</form>
+
+
+<% include footer %>
